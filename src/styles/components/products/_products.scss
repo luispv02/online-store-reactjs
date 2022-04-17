@@ -1,0 +1,83 @@
+.products__content{
+    width: 100%;
+    /* height: 100vh;
+    overflow-y: scroll; */
+
+
+    .products__content__all-products{
+
+        margin-top: 2rem;
+
+        h2{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .product{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .product__content__card{
+                border: 1px solid #ccc;
+                height: 100%;
+                width: 45%;
+                margin-bottom: 2rem;
+
+                @media (min-width: 600px){
+                    width: 24%;
+                }
+
+                @media (min-width: 1024px){
+                    width: 18%;
+                }
+    
+                .card__image{
+                    width: 100%;
+                    text-align: center;
+    
+                    img{
+                        width: 50%;
+                       
+                    }
+                }
+    
+                .card__body{
+                    width: 100%;
+                    margin-top: .5rem;
+                    padding: .5rem;
+
+                    .name{
+                        font-weight: 500;
+                        font-size: .9rem;
+                    }
+                    .brand{
+                        font-size: .9rem;
+                        margin: .8rem 0;
+                    }
+                
+                    .price{
+                       font-weight: 500;
+                    }
+
+                    button{
+                        padding: 0.5rem 0;
+                        border-radius: 10px;
+                        width: 100%;
+                        border: none;
+                        background: #1c6fb7;
+                        color: white;
+                        margin: .8rem 0;
+                        cursor: pointer;
+                        transition: .5s;
+
+                        &:hover{
+                            background: #0a4272;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

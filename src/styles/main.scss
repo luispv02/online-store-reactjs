@@ -1,0 +1,14 @@
+@import './base/base';
+@import './base/layout';
+
+//Header
+@import './components/header/header';
+@import './components/header/shoppingCart.scss';
+
+//Sidebar
+@import './components/sidebar/sidebar';
+@import './components/sidebar/menu';
+
+//Products
+@import './components/products/products';
+@import './components/products/slider';

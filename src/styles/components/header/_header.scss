@@ -1,0 +1,78 @@
+.header__content{
+    background: #fff159;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+
+    @media (min-width: 768px){
+        width: 70%;
+        height: 50px;
+    }
+
+    @media (min-width: 1024px){
+        width: 80%;
+        height: 50px;
+    }
+
+
+    .header__content__hamburger{
+
+        @media (min-width:768px){
+            display: none;
+        }
+
+        i{
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+
+    .header__content__car{
+        position: relative; 
+
+        i{
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: black;
+        }
+
+        span{
+            position: absolute;
+            top: -8px;
+            font-size: 12px;
+        }
+    }
+
+    .header__content__search{
+        width: 100%;
+        text-align: center;
+
+        @media (min-width:768px){
+           width: 80%;
+           margin: 0 auto;
+        }
+
+        @media (min-width:1024px){
+            width: 50%;
+            margin: 0 auto;
+         }
+
+
+        input {
+            border: none;
+            border-radius: 10px;
+            padding: 0.3rem 0.8rem;
+            width: 90%;
+
+            &:focus-visible{
+                outline: none;
+            }
+        }
+    }
+}

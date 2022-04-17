@@ -1,0 +1,24 @@
+.sidebar__content__menu{
+    background: white;
+    
+    @media (min-width: 768px){
+        margin-top: 1rem;
+    }
+
+    li{
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color:black;
+            display: block;
+            padding: 1rem 0 1rem .8rem;
+            transition: all .5s;
+
+            &:hover{
+                color: #006fb1;
+                background-color: #ededed;
+            }
+        }
+    }
+}
