@@ -14,25 +14,21 @@
         }
 
         .product{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            
+
+            @media(min-width: 768px) {
+                padding: 0 2rem 2rem 0;
+            }
+
 
             .product__content__card{
                 border: 1px solid #ccc;
-                height: 100%;
-                width: 45%;
-                margin-bottom: 2rem;
                 transition: .5s;
-
-                @media (min-width: 600px){
-                    width: 24%;
-                }
-
-                @media (min-width: 1024px){
-                    width: 18%;
-                }
+                display: grid;
+                grid-template-rows: 1fr auto;
 
                 &:hover{
                     cursor: pointer;
@@ -45,7 +41,7 @@
     
                     img{
                         width: 50%;
-                       
+                        padding-top: 2rem;                       
                     }
                 }
     
@@ -60,11 +56,11 @@
                     }
                     .brand{
                         font-size: .9rem;
-                        margin: .8rem 0;
+                        margin: 5px 0;
                     }
                 
                     .price{
-                       font-weight: 500;
+                       font-weight: 600;
                     }
 
                     button{
@@ -74,9 +70,9 @@
                         border: none;
                         background: #1c6fb7;
                         color: white;
-                        margin: .8rem 0;
                         cursor: pointer;
                         transition: .5s;
+                        margin: 20px 0 10px 0;
 
                         &:hover{
                             background: #0a4272;
